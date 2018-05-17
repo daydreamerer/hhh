@@ -3,13 +3,12 @@
 //#include<vector>
 #include<string>
 using namespace std;
-
 int main() {
 	string filename;
-	cout << "ÇëÊäÈëÄãÒª´ò¿ªµÄÎÄ¼şÃû:";
+	cout << "è¯·è¾“å…¥è¦æ‰“å¼€çš„æ–‡ä»¶å:";
 	cin >> filename;
 
-	ifstream infile(filename.c_str(), ios::in);//²âÊÔÎÄ¼şÊÇ·ñ´æÔÚ
+	ifstream infile(filename.c_str(), ios::in);//æµ‹è¯•æ–‡ä»¶æ˜¯å¦å­˜åœ¨
 	if (!infile) {
 		cerr << "oops!unable to open file " << filename << " --bailing out!\n";
 		return(-1);
@@ -23,7 +22,7 @@ int main() {
 	}
 	*/
 	string name;
-	cout << "ÇëÊäÈëÄãÒªÍ³¼ÆµÄµ¥´Ê£º";
+	cout << "è¯·è¾“å…¥ä½ è¦ç»Ÿè®¡çš„å•è¯ï¼š";
 	cin >> name;
 	int total = 0;
 	while (infile >> word) {
@@ -35,8 +34,8 @@ int main() {
 	}
 	*/
 	if (total == 0)
-		cout << "Ã»ÓĞÕÒµ½ÄãËùÒª²éµÄµ¥´Ê!";
-	else cout << "ÄãËù²éÕÒµÄµ¥´Ê¹²³öÏÖ£º" << total << " ´Î!";
+		cout << "æ²¡æœ‰æ‰¾åˆ°ä½ æ‰€è¦æŸ¥çš„å•è¯!";
+	else cout << "ä½ æ‰€æŸ¥æ‰¾çš„å•è¯å…±å‡ºç°ï¼š" << total << " æ¬¡!";
 
 	cout << endl;
 	system("pause");
